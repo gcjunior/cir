@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 34" width="35" height="34">
+	<title>&lt;Group&gt;</title>
+	<defs>
+		<image  width="19" height="17" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAARCAMAAAAIRmf1AAAAAXNSR0IB2cksfwAAAQtQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////iT2pngAAAFl0Uk5TAB9rVUN9qKyZBCReaIpZG4AHRo2HPyuMNUBjb6VbHlOBBUEMSpR7PQ6LS5MZAp8YkSGXR212FoibaY86VAMRMVfnYYQoX4kSfCYTMrVOAZYaDzSYnSMQhkms28f8AAAAxElEQVR4nGNgQAWMTMxoIiysbOwcnEgCXNzsPLx8/AJwAUEhYRFRMXEJBkkpqIiYtIysHIO8giIDA5MSSEBZRVVNnYFBQ1MLxNPWYWDQ5dGT1weyRQ0MQUIaRiBxY7BuHhOIKRKmQMLM3MKS2UrPGmqyjQqItLWzd3B0gtnv7AJjcbjCBNnhrnNzV/IAMzzV4GIcXgzePiCGLzdcTNPdzz/AKhBofRBczIo/GOi9kFAGjjC4mGc4mBKIUEAKEz8IJSsIIgHJmRMxZ2aCcAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="&lt;Group&gt;" href="#img1" x="7" y="8" />
+</svg>
