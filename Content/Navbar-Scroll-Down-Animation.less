@@ -1,0 +1,56 @@
+﻿body.navbar-scroll-down {
+    @height: 6.0rem;
+
+    .top-space {
+        margin-top: @height;
+    }
+
+    nav.navbar:not(.navbar-footer) {
+        transition: min-height ease .3s, height ease .3s;
+
+        & {
+            min-height: @height;
+            height: @height;
+            /*background-color: rgba(188, 149, 90, 0.59);*/
+            .navbar-brand {
+                padding: 0 15px;
+                height: @height - 2rem;
+
+                img {
+                    display: block;
+                    max-height: 100%;
+                }
+            }
+
+
+            .navbar-nav {
+                li {
+                    a {
+                        line-height: @height - 2rem;
+
+                        &:before {
+                            bottom: -1rem;
+
+                            @media(min-width: 768px) {
+                                bottom: 0rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #floorplans .sidebar, #availability .sidebar {
+        @max-width-to-collapse: 768px;
+
+        @media(min-width: @max-width-to-collapse) {
+            height: calc(100vh - @height);
+            top: @height;
+        }
+
+        &.show-filter-without-options {
+            height: auto;
+        }
+    }
+}

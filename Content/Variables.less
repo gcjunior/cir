@@ -1,0 +1,104 @@
+﻿@import "GoogleFonts";
+
+@navbar-height: 7.1rem;
+@font-family-1: 'lato-regular', sans-serif;
+@font-family-2: 'Lora', serif;
+@font-family-3: 'abril-display', sans-serif;
+@font-family-4: 'lato-semibold-italic-15';
+@font-family-5: 'lato-semibold-6';
+@font-family-5: lato-light-4 ;
+
+@standard-color: red;
+
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-size: 52.5%;
+
+    @media(min-width: 576px) {
+        font-size: 40.5%;
+    }
+
+    @media(min-width: 768px) {
+        font-size: 45.5%;
+    }
+
+    @media(min-width: 992px) {
+        font-size: 52.5%;
+    }
+
+    @media(min-width: 1200px) {
+        font-size: 62.5%; /*1rem = 10px*/
+    }
+}
+
+body {
+    color: @standard-color;
+    font-size: 1.6rem;
+    padding-top: @navbar-height;
+    font-family: @font-family-1;
+
+    @media(min-width: 576px) {
+        font-size: 1.6rem;
+    }
+
+    @media(min-width: 768px) {
+        font-size: 1.6rem;
+    }
+
+    @media(min-width: 992px) {
+        font-size: 1.6rem;
+    }
+
+    @media(min-width: 1200px) {
+        font-size: 1.6rem;
+    }
+}
+
+nav {
+    min-height: @navbar-height;
+    background-color: #d4d4d8;
+    font-family: @font-family-1;
+
+    &.navbar {
+        padding: 0;
+
+        .collapse {
+            padding: 0 24.5rem;
+
+            ul {
+                &.navbar-nav {
+                    li {
+                        a.nav-link {
+                            line-height: @navbar-height;
+                            background-color: #f05a22;
+                            padding: 0 30px;
+                            color: rgba(255, 255, 255, 0.5);
+                            font-size: 15px;
+                        }
+
+                        &.active {
+                            a.nav-link {
+                                position: relative;
+
+                                &:after {
+                                    content: '';
+                                    position: absolute;
+                                    bottom: 10px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 0;
+                                    height: 0;
+                                    border-top: solid 8px #fff;
+                                    border-left: solid 7.5px transparent;
+                                    border-right: solid 7.5px transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,239 @@
+﻿@import "Variables";
+
+
+h2 {
+    margin-top: 4.5rem;
+    font-family: @font-family-2;
+    font-style: italic;
+    color: #192450;
+    font-size: 2.0rem;
+
+    span {
+        font-family: @font-family-1;
+        font-style: normal;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+article {
+    &.article-1 {
+        margin-top: 4rem;
+
+        .card {
+            flex-direction: row;
+            align-items: center;
+            font-family: @font-family-4;
+            border: 0;
+            margin-bottom: 12rem;
+
+            .thumbnail {
+                max-width: 24.8rem;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: calc(0.25rem - 1px);
+                position: relative;
+                border: 1px solid #dddedf;
+
+                .card-img-top {
+                    min-width: 100%;
+                }
+
+                .thumbnail-footer {
+                    position: absolute;
+                    bottom: 0;
+                    height: 44px;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    padding: 5px;
+                    width: 100%;
+
+                    span {
+                        padding-left: 10px;
+                        font-size: 13px;
+                        font-family: @font-family-1;
+
+                        &.color-1 {
+                            color: #617c9c;
+                        }
+
+                        &.color-2 {
+                            color: #ef4438;
+                        }
+
+                        &.color-3 {
+                            color: #cf9518;
+                        }
+
+                        &.color-4 {
+                            color: #8aa532;
+                        }
+                    }
+                }
+            }
+
+            .card-body {
+                padding-left: 40px;
+
+                .card-title {
+                    color: #1a2550;
+                    font-size: 10px;
+                    font-family: @font-family-3;
+                    font-style: italic;
+                    margin-bottom: 3rem;
+                }
+
+
+                .card-text {
+                    ul {
+                        padding-left: 0px;
+                        list-style-type: none;
+
+                        li {
+                            p {
+                                color: #676b7c;
+                                font-size: 9px;
+
+                                span {
+                                    color: #676b7c;
+                                    padding-left: 10px;
+                                    font-size: 12px;
+                                    font-family: @font-family-1;
+
+                                    &.highlight {
+                                        color: #f15a22;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                div {
+                    a {
+                        background-color: #d95060;
+                        height: 35px;
+                        padding: 10px;
+                        width: 100px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.article-2 {
+        background-color: #f1f1f1;
+        padding-top: 8rem;
+
+        .col-xl-3 {
+            margin-bottom: 5rem;
+
+            &:after {
+                content: "";
+                background-color: #dededf;
+                position: absolute;
+                width: 2px;
+                height: 110%;
+                top: 0;
+                right: 5%;
+                display: block;
+            }
+
+            &:last-of-type {
+                &:after {
+                    width: 0;
+                }
+            }
+        }
+
+        .card {
+            border: 0;
+            background-color: transparent;
+            width: 90%;
+
+            .thumbnail {
+                max-width: 11.7rem;
+
+                img {
+                    border: 1px solid #cccdcc;
+                }
+            }
+
+            .card-body {
+                padding-left: 2.0rem;
+
+                .card-title {
+                    font-size: 2.1rem;
+                    color: #1a2550;
+                    font-family: @font-family-5;
+                    text-transform: uppercase;
+
+                    @media(min-width: 1200px) {
+                        font-size: 1.8rem;
+                    }
+
+                    @media(min-width: 1920px) {
+                        font-size: 2.1rem;
+                    }
+                }
+
+                .card-text {
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+
+                        li {
+                            p {
+                                color: #8c92a7;
+                                font-size: 9px;
+                                font-family: @font-family-5;
+                                text-transform: uppercase;
+
+                                &.highlight {
+                                    color: #1a2550;
+                                }
+
+                                span {
+                                    font-size: 12px;
+                                    color: #676b7c;
+                                    padding-left: 10px;
+                                    text-transform: capitalize;
+
+                                    &.highlight {
+                                        font-weight: bold;
+                                        color: #f15a22;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card-footer {
+                border: 0;
+                margin-top: 12px;
+
+                a {
+                    border-radius: 10px;
+                    padding-left: 10px;
+
+                    &.bg-color-1 {
+                        background-color: #82a4be;
+                    }
+
+                    &.bg-color-2 {
+                        background-color: #ef4337;
+                    }
+
+                    &.bg-color-3 {
+                        background-color: #e3a83e;
+                    }
+
+                    &.bg-color-4 {
+                        background-color: #bbce6a;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+﻿body.navbar-scroll-down .top-space {
+  margin-top: 6rem;
+}
+body.navbar-scroll-down nav.navbar:not(.navbar-footer) {
+  transition: min-height ease 0.3s, height ease 0.3s;
+  min-height: 6rem;
+  height: 6rem;
+  /*background-color: rgba(188, 149, 90, 0.59);*/
+}
+body.navbar-scroll-down nav.navbar:not(.navbar-footer) .navbar-brand {
+  padding: 0 15px;
+  height: 4rem;
+}
+body.navbar-scroll-down nav.navbar:not(.navbar-footer) .navbar-brand img {
+  display: block;
+  max-height: 100%;
+}
+body.navbar-scroll-down nav.navbar:not(.navbar-footer) .navbar-nav li a {
+  line-height: 4rem;
+}
+body.navbar-scroll-down nav.navbar:not(.navbar-footer) .navbar-nav li a:before {
+  bottom: -1rem;
+}
+@media (min-width: 768px) {
+  body.navbar-scroll-down nav.navbar:not(.navbar-footer) .navbar-nav li a:before {
+    bottom: 0rem;
+  }
+}
+@media (min-width: 768px) {
+  body.navbar-scroll-down #floorplans .sidebar,
+  body.navbar-scroll-down #availability .sidebar {
+    height: calc(100vh - 6rem);
+    top: 6rem;
+  }
+}
+body.navbar-scroll-down #floorplans .sidebar.show-filter-without-options,
+body.navbar-scroll-down #availability .sidebar.show-filter-without-options {
+  height: auto;
+}
