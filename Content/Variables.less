@@ -1,12 +1,9 @@
 ﻿@import "GoogleFonts";
 
 @navbar-height: 7.1rem;
-@font-family-1: 'lato-regular', sans-serif;
-@font-family-2: 'Lora', serif;
-@font-family-3: 'abril-display', sans-serif;
-@font-family-4: 'lato-semibold-italic-15';
-@font-family-5: 'lato-semibold-6';
-@font-family-5: lato-light-4 ;
+@font-family-lora-italic: 'Lora', sans-serif;
+@font-family-abril-display-italic: 'abril-display-italic', serif;
+@font-family-lato: 'Lato', sans-serif;
 
 @standard-color: red;
 
@@ -37,7 +34,7 @@ body {
     color: @standard-color;
     font-size: 1.6rem;
     padding-top: @navbar-height;
-    font-family: @font-family-1;
+    font-family: @font-family-lato;
 
     @media(min-width: 576px) {
         font-size: 1.6rem;
@@ -59,7 +56,8 @@ body {
 nav {
     min-height: @navbar-height;
     background-color: #d4d4d8;
-    font-family: @font-family-1;
+    font-family: @font-family-lato;
+    font-weight: 400;
 
     &.navbar {
         padding: 0;
