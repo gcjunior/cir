@@ -480,3 +480,282 @@ article.article-2 .card .card-footer a span.arrow-right:after {
   top: -2px;
   position: relative;
 }
+#campaigns {
+  font-family: 'Lato', sans-serif;
+}
+#campaigns .text-muted p:not(.text-1),
+#campaigns button p:not(.text-1),
+#campaigns .text-muted a,
+#campaigns button a,
+#campaigns .text-muted input,
+#campaigns button input,
+#campaigns .text-muted select,
+#campaigns button select,
+#campaigns .text-muted button,
+#campaigns button button,
+#campaigns .text-muted img,
+#campaigns button img,
+#campaigns .text-muted textarea,
+#campaigns button textarea,
+#campaigns .text-muted[disabled=disabled],
+#campaigns button[disabled=disabled] {
+  opacity: 0.3;
+}
+#campaigns .disable-section .muted {
+  opacity: 0.3;
+}
+#campaigns article.step-1,
+#campaigns article.step-2,
+#campaigns article.step-3 {
+  background-color: #F2F2F2;
+  padding: 1.5rem 0 4.2rem 0;
+  font-weight: 400;
+}
+#campaigns article.step-1 .container-fluid,
+#campaigns article.step-2 .container-fluid,
+#campaigns article.step-3 .container-fluid {
+  padding: 0 160px;
+  width: 100%;
+}
+#campaigns article.step-1 .box,
+#campaigns article.step-2 .box,
+#campaigns article.step-3 .box {
+  border: 1px solid #999999;
+  padding: 3rem;
+  background-color: #fff;
+}
+#campaigns article.step-1 .box p,
+#campaigns article.step-2 .box p,
+#campaigns article.step-3 .box p {
+  color: #676B7C;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+#campaigns article.step-1 .box p.text-1,
+#campaigns article.step-2 .box p.text-1,
+#campaigns article.step-3 .box p.text-1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+#campaigns article.step-1 .box p.text-2,
+#campaigns article.step-2 .box p.text-2,
+#campaigns article.step-3 .box p.text-2 {
+  font-size: 1.2rem;
+}
+#campaigns article.step-1 .box p.highlight,
+#campaigns article.step-2 .box p.highlight,
+#campaigns article.step-3 .box p.highlight {
+  color: #1A2550;
+}
+#campaigns article.step-1 .box .form-group div,
+#campaigns article.step-2 .box .form-group div,
+#campaigns article.step-3 .box .form-group div {
+  width: 50%;
+  padding-right: 3rem;
+}
+#campaigns article.step-1 .box .form-group div:last-of-type,
+#campaigns article.step-2 .box .form-group div:last-of-type,
+#campaigns article.step-3 .box .form-group div:last-of-type {
+  width: 10%;
+  padding: 0;
+}
+#campaigns article.step-1 .box .form-group div:last-of-type button,
+#campaigns article.step-2 .box .form-group div:last-of-type button,
+#campaigns article.step-3 .box .form-group div:last-of-type button {
+  margin-left: auto;
+  border: 1px solid #00B2BD;
+  border-radius: 5px;
+  height: 32px;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #00B2BD;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#campaigns article.step-1 .box .form-group div input,
+#campaigns article.step-2 .box .form-group div input,
+#campaigns article.step-3 .box .form-group div input,
+#campaigns article.step-1 .box .form-group div select,
+#campaigns article.step-2 .box .form-group div select,
+#campaigns article.step-3 .box .form-group div select {
+  border: 1px solid #999999;
+  width: 100%;
+  border-radius: 5px;
+  height: 25px;
+  font-size: 1.1rem;
+  padding-left: 5px;
+}
+#campaigns article.step-1 .box .form-group div input,
+#campaigns article.step-2 .box .form-group div input,
+#campaigns article.step-3 .box .form-group div input {
+  color: #A7A9AC;
+}
+#campaigns article.step-1 .box .form-group div select,
+#campaigns article.step-2 .box .form-group div select,
+#campaigns article.step-3 .box .form-group div select {
+  color: #44444D;
+}
+#campaigns article.step-2 .box {
+  background-color: #F2F2F2;
+}
+#campaigns article.step-2 .box .highlight {
+  font-size: 1.4rem;
+}
+#campaigns article.step-2 .box .font-1 {
+  font-size: 12px;
+}
+#campaigns article.step-2 .box .font-2 {
+  font-size: 9px;
+}
+#campaigns article.step-2 .box a.btn-option {
+  background-color: #F15A22;
+  font-size: 13px;
+  display: block;
+  margin-top: 3px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 7px 0;
+}
+#campaigns article.step-2 .box a.btn-option span {
+  font-size: 10px;
+  font-weight: 300;
+}
+#campaigns article.step-2 .box.box-a {
+  border-bottom: 0;
+}
+#campaigns article.step-2 .box.box-b {
+  border-top: 0;
+}
+#campaigns article.step-2 .box.box-b textarea {
+  height: 14.8rem;
+  padding: 10px;
+  font-size: 11px;
+}
+#campaigns article.step-2 .box.box-b img {
+  background-color: #fff;
+}
+#campaigns article.step-2 .box.box-b button {
+  margin-left: auto;
+  border: 1px solid #00B2BD;
+  border-radius: 5px;
+  height: 32px;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #00B2BD;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#campaigns article.step-2 .box.box-b p.semibold {
+  font-weight: 700;
+  padding-left: 15px;
+}
+#campaigns article.step-2 .box.box-b p small {
+  font-size: 9px;
+  padding-left: 15px;
+  font-weight: 400;
+}
+#campaigns article.step-3 .box hr {
+  position: relative;
+  border: none;
+  height: 0.5px;
+  background: #8C92A7;
+  width: 100%;
+  margin-top: 25px;
+}
+#campaigns article.step-3 .box .finalize label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #676B7C;
+  text-align: start;
+  width: 40%;
+  font-size: 12px;
+  font-weight: 300;
+}
+#campaigns article.step-3 .box .finalize label input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+#campaigns article.step-3 .box .finalize .btn-finalize {
+  border-color: #F15A22;
+  background-color: #F15A22;
+  color: #fff;
+  font-size: 13px;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+#campaigns article.step-3 .box p {
+  font-weight: 700;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+#campaigns article.step-3 .box p.highlight {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-family: 'abril-display-italic', serif;
+}
+#campaigns article.step-3 .box p.highlight + p {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 400;
+}
+#campaigns article.step-3 .box p span {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+#campaigns article.step-3 .box p span.highlight {
+  color: #F15A22;
+}
+#campaigns article.step-3 .review {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+#campaigns article.step-3 .review .horizontal-review::before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #8C92A7;
+  height: 75%;
+  left: 20px;
+  z-index: 1;
+  top: 25%;
+}
+#campaigns article.step-3 .review .horizontal-review::after {
+  content: "REVIEW";
+  -moz-transform: rotate(-90deg);
+  -moz-transform-origin: center center;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: center center;
+  -ms-transform: rotate(-90deg);
+  -ms-transform-origin: center center;
+  top: 20px;
+  left: -15px;
+  position: absolute;
+  color: #8C92A7;
+  z-index: 2;
+  letter-spacing: 2px;
+}
+#campaigns article.step-3 .review div {
+  flex-basis: 30%;
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 15px;
+}
+#campaigns article.step-3 .review div:first-of-type {
+  flex-basis: 3%;
+}
+#campaigns article.step-3 .review div:last-of-type {
+  padding-right: 0px;
+  padding-left: 45px;
+}
+#campaigns article.step-3 .review div img {
+  width: 100%;
+  border: 1px solid #999999;
+}
