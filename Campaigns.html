@@ -14,7 +14,6 @@
         onClickNext = () => {
             document.getElementsByClassName("step-1")[0].classList.add("text-muted");
             document.getElementsByClassName("step-1")[0].getElementsByTagName("input")[0].setAttribute("disabled", "disabled");
-            document.getElementsByClassName("step-1")[0].getElementsByTagName("select")[0].setAttribute("disabled", "disabled");
             document.getElementsByClassName("step-1")[0].getElementsByTagName("button")[0].setAttribute("disabled", "disabled");
         }
 
@@ -41,6 +40,25 @@
 
         onClickBack = () => {
             window.location.replace(document.referrer);
+        }
+
+        selectAllRows = (obj) => {
+            var checked = true;
+            if (!obj.checked) {
+                checked = false;
+            }
+            for (let item of obj.parentElement.parentElement.parentElement.parentElement.getElementsByTagName("tbody")[0].getElementsByTagName("tr")) {
+                item.classList.add("row-selected");
+                item.getElementsByTagName("input")[0].checked = checked;
+            }
+        }
+
+        selectRow = (obj) => {
+            if (obj.parentElement.parentElement.classList.contains("row-selected")) {
+                obj.parentElement.parentElement.classList.remove("row-selected");
+            } else {
+                obj.parentElement.parentElement.classList.add("row-selected");
+            }
         }
     </script>
 </head>
@@ -71,16 +89,70 @@
                                 <p class="highlight">Step 1</p>
                                 <p class="text-2 px-5">Choose Your Campaign Name Group</p>
                             </div>
-                            <div class="d-flex justify-content-between form-group">
+                            <div class="d-flex form-group flex-row">
                                 <div>
                                     <p class="">Name Your Campaign</p>
                                     <input type="text" value="" name="name" class="" placeholder="Campaign Name" />
                                 </div>
-                                <div class="d-flex flex-column align-self-end">
-                                    <p class="">christmas card mailout campaign - subscribe & setup</p>
-                                    <select class=""><option>--Select A Group--</option></select>
+                            </div>
+                            <div class="table-members">
+                                <div class="cols">
+                                    <p>Select One or More Groups You Wish to Send this Campaign</p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th valign="middle" class="text-center">
+                                                    <input type="checkbox" onclick="selectAllRows(this)" />
+                                                </th>
+                                                <th>
+                                                    # of Members
+                                                </th>
+                                                <th>
+                                                    Group Name
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="row-selected">
+                                                <td valign="middle" class="text-center">
+                                                    <input type="checkbox" onclick="selectRow(this)" checked />
+                                                </td>
+                                                <td>
+                                                    143
+                                                </td>
+                                                <td>
+                                                    Main Group
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="middle" class="text-center">
+                                                    <input type="checkbox" onclick="selectRow(this)" />
+                                                </td>
+                                                <td>
+                                                    3
+                                                </td>
+                                                <td>
+                                                    Group 1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="middle" class="text-center">
+                                                    <input type="checkbox" onclick="selectRow(this)" />
+                                                </td>
+                                                <td>
+                                                    6009
+                                                </td>
+                                                <td>
+                                                    Group 3
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="total-participants-groups">
+                                        Total # of Participants:<span class="highlight">146</span>   Total # of Groups:  <b>2 Groups  [Main Group, Group 1]</b>
+                                    </p>
                                 </div>
-                                <div class="d-flex align-self-end">
+                                <div class="cols">
                                     <button class="btn-next" onclick="onClickNext()">Next</button>
                                 </div>
                             </div>
